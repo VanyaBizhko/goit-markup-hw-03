@@ -7,7 +7,6 @@
     --bcg-team:#F5F4FA;
     --address-color:rgba(255, 255, 255, 0.6);
     --bcg-hero:#2F303A;
-    --bcg-main:#F5F5F5;
     --font-ralewey:'Raleway', sans-serif;
     --font-roboto:'Roboto', sans-serif;
 }
@@ -53,6 +52,7 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    color: var(--color-main)
 
 }
 
@@ -78,7 +78,7 @@ body{
 
 /* ---------------Hero---------------- */
 .main {
-    background: var(--bcg-main);
+    background: var(--color-white);
 
 }
 
@@ -266,10 +266,7 @@ color: var(--color-blue);
         cursor: pointer;
 }
 .btn{
-   
-        left: 593px;
-        top: 174px;
-    
+
         background: var(--bcg-team);
         border-radius: 4px;
     border: none;

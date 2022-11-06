@@ -11,9 +11,31 @@
     --font-roboto:'Roboto', sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: 0;
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: var(--font-roboto) ;
     color: var(--color-main);
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
 }
 .title{
     font-size: 36px;
@@ -27,13 +49,24 @@ body{
 .links{
     text-decoration: none;
 }
+
 /* ---------------Header---------------- */
 
 .header {
     background-color: var(--color-white);
 }
+.header-container{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+}
+.logo-header{
+    margin-right: 93px;
+}
 
-.logo-header {
+.logo-white {
     font-family: var(--font-ralewey);
     font-style: normal;
     font-weight: 700;
@@ -45,6 +78,13 @@ body{
 
 .logo-main, .current {
     color: var(--color-blue);
+}
+.navigation{
+    margin-right: auto;
+}
+.nav-list{
+    display: flex;
+    gap: 50px;
 }
 
 .header-nav-link {
@@ -60,6 +100,10 @@ body{
 .header-nav-link:focus,
 .current{
     color: var(--color-blue);
+}
+.contacts-list{
+    display: flex;
+    gap: 50px;
 }
 
 .header-nav-contacts {
@@ -85,6 +129,10 @@ body{
 .hero {
     background: var(--bcg-hero);
 }
+.hero-container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 
 .hero-title {
     font-weight: 900;
@@ -94,6 +142,10 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-white);
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -111,9 +163,25 @@ body{
     color: var(--color-white);
     background: var(--color-blue);
     cursor: pointer;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
    
 }
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 /* ---------------Особливості---------------- */
@@ -122,18 +190,31 @@ body{
 .features {
 
 }
-
+.features-container{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .features-title {}
 
-.features-list {}
+.features-list {
+    display: flex;
+    column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.features-list-item {}
+
+.features-list-item {
+     width: calc((100% - 90px)/ 4);
+
+}
 
 .features-list-title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
 text-transform: uppercase;
+margin-bottom: 10px;
 
 }
 
@@ -151,12 +232,24 @@ text-transform: uppercase;
 
 
 .jobs {}
+.jobs-container{
+    padding-bottom: 94px;
+}
+.jobs-title {
+    padding-bottom: 50px;
+}
 
-.jobs-title {}
+.jobs-list {
+    display: flex;
+    column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-.jobs-list {}
-
-.jobs-list-item {}
+.jobs-list-item {
+    width: calc((100% - 60px) / 3);
+        
+}
 
 .jobs-list-photo {}
 
@@ -171,17 +264,31 @@ text-transform: uppercase;
 .team {
     background-color: var(--bcg-team);
 }
-
-.team-title {
+.team-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.team-list {}
+.team-title {
+    padding-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .team-list-item {
     background-color: var(--color-white);
+    padding-bottom: 30px;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 60px) / 3);
 }
 
-.team-list-photo {}
+.team-list-photo {
+}
 
 .team-list-title { 
     font-weight: 500;
@@ -190,6 +297,8 @@ text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-main);
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .team-list-text {
@@ -197,7 +306,7 @@ text-transform: uppercase;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--bcg-hero);
+    color: var(--color-grey);
 }
 
 
@@ -209,8 +318,16 @@ text-transform: uppercase;
 .footer {
     background-color: var(--bcg-hero);
 }
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 .logo-footer{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.logo-black{
     font-family: var(--font-ralewey);
     font-style: normal;
     font-weight: 700;
@@ -222,6 +339,12 @@ text-transform: uppercase;
 
 .address {
     font-style: inherit;
+}
+.address-list{
+
+}
+.address-list-item{
+    margin-top: 9px;
 }
 
 .address-item {
@@ -242,15 +365,36 @@ color: var(--color-blue);
 
 
 /* ---------------ПОРТФОЛІО---------------- */
+
+
+
+
+
 /* ---------------Галерея---------------- */
 .main-portfilio {}
+.container-gallery{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .gallery {}
+.container-gallery-btn{
 
-.gallery-links {}
+}
+
+.gallery-links {
+    display: flex;
+    margin-bottom: 50px;
+    column-gap: 8px;
+    justify-content: center;
+
+
+
+}
+
 
 .gallery-links-item {
-   
+
 }
 
 .gallery-btn {
@@ -264,6 +408,7 @@ color: var(--color-blue);
         background-color: var(--bcg-team);
         
         cursor: pointer;
+        padding: 6px 22px;
 }
 .btn{
 
@@ -277,19 +422,51 @@ color: var(--color-blue);
     color: var(--color-white);
     background: var(--color-blue);
 }
+.gallery-photo{
+    
 
-.galley-list {}
+}
+.galley-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-.gallery-list-item {}
+   
+}
+
+.gallery-list-item {
+    box-sizing: border-box;
+   
+    width: calc((100% - 60px)/ 3);
+    padding-bottom: 20px;
+    padding-right: 10px;
+
+
+}
+.border-gallery{
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 
 .gallery-list-title {
     font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+        padding-left: 24px;
+            padding-right: 24px;
+
+}
 
 .gallery-list-text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--color-grey);
+        padding-left: 24px;
+            padding-right: 24px;
 }
+

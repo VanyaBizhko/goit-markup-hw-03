@@ -30,6 +30,10 @@ body{
     font-family: var(--font-roboto) ;
     color: var(--color-main);
 }
+.section{
+padding-top: 94px;
+    padding-bottom: 94px;
+}
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -53,14 +57,14 @@ body{
 /* ---------------Header---------------- */
 
 .header {
-    background-color: var(--color-white);
+    border-bottom: 1px solid #ECECEC;
 }
 .header-container{
     display: flex;
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
+
 }
 .logo-header{
     margin-right: 93px;
@@ -122,16 +126,15 @@ body{
 
 /* ---------------Hero---------------- */
 .main {
-    background: var(--color-white);
-
 }
 
 .hero {
     background: var(--bcg-hero);
-}
-.hero-container{
     padding-top: 200px;
     padding-bottom: 200px;
+    }
+
+.hero-container{
 }
 
 .hero-title {
@@ -191,8 +194,7 @@ body{
 
 }
 .features-container{
-padding-top: 94px;
-padding-bottom: 94px;
+
 }
 .features-title {}
 
@@ -233,10 +235,9 @@ margin-bottom: 10px;
 
 .jobs {}
 .jobs-container{
-    padding-bottom: 94px;
 }
 .jobs-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .jobs-list {
@@ -265,12 +266,11 @@ margin-bottom: 10px;
     background-color: var(--bcg-team);
 }
 .team-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    
 }
 
 .team-title {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .team-list {
@@ -317,15 +317,16 @@ margin-bottom: 10px;
 
 .footer {
     background-color: var(--bcg-hero);
-}
-.footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer-container{
+    
 }
 
 .logo-footer{
     display: inline-block;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .logo-black{
     font-family: var(--font-ralewey);
@@ -343,7 +344,7 @@ margin-bottom: 10px;
 .address-list{
 
 }
-.address-list-item{
+.address-list-item:not(:first-child){
     margin-top: 9px;
 }
 
@@ -373,8 +374,7 @@ color: var(--color-blue);
 /* ---------------Галерея---------------- */
 .main-portfilio {}
 .container-gallery{
-    padding-top: 94px;
-    padding-bottom: 94px;
+
 }
 
 .gallery {}
@@ -423,7 +423,9 @@ color: var(--color-blue);
     background: var(--color-blue);
 }
 .gallery-photo{
-    
+    display: block;
+    width: 100%;
+    height: auto;
 
 }
 .galley-list {
@@ -447,8 +449,9 @@ color: var(--color-blue);
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     border-right: 1px solid #eeeeee;
-    padding-bottom: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
 }
 
 
@@ -456,8 +459,7 @@ color: var(--color-blue);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-        padding-left: 24px;
-            padding-right: 24px;
+
 
 }
 
@@ -466,7 +468,6 @@ color: var(--color-blue);
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--color-grey);
-        padding-left: 24px;
-            padding-right: 24px;
+
 }
 
